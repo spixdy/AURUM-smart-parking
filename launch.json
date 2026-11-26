@@ -1,0 +1,10 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "Dashboard (Streamlit)", "type": "debugpy", "request": "launch", "module": "streamlit",
+      "args": ["run", "streamlit_app.py"] },
+    { "name": "Ingest (MQTT subscriber)", "type": "debugpy", "request": "launch", "module": "aurum.ingest" },
+    { "name": "Simulator (offline)", "type": "debugpy", "request": "launch", "module": "aurum.simulator",
+      "args": ["--offline", "--backfill", "3"] }
+  ]
+}
